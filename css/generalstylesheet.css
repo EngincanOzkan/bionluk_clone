@@ -1,0 +1,256 @@
+@font-face {
+    font-family: sofia_pro_regular;
+    src: url("../fonts/sofia_pro_soft_light.tff");
+}
+
+@font-face {
+    font-family: ArailBold;
+    src: url("../fonts/SofiaProBold.ttf");
+}
+
+body {
+    margin: 0;
+    font-family: sofia_pro_regular;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.generalTopBar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    /*height: 100px;*/
+    width: 100%;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+    background-color: #fff;
+}
+
+.generalLogoDiv {
+    width: 120px;
+    height: 29px;
+    margin-top: 18px;
+    margin-bottom: 15px;
+}
+
+.generalLogo {
+    width: 120px;
+    height: 29px;
+    cursor: pointer;
+}
+
+/*maindeki alt pembebolumle değiştir.*/
+.pinkContainer {
+    padding-top: 110px;
+    padding-bottom: 80px;
+    background-image: linear-gradient(79deg,rgba(230,50,98,.9),rgba(253,64,86,.9));
+}
+
+.pinkContainer p {
+    margin-top: 0;
+    color: white;
+    font-size: 42px;
+    text-align: center;
+}
+
+.flexBox {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.searchBoxModel1Container {
+    height: 62px;
+    width: 480px;
+    margin-left: 25%;
+}
+
+.searchBoxModel1 {
+    background: #fff url("../images/search_siyah.svg") no-repeat 2.5%;
+    font-size: 16px;
+    border-radius: 2px;
+    border: 0;
+    border-bottom: 1px solid #bfc8d2;
+    color: #2d3640;
+    padding: 9px 10px 11px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    padding-left: 35px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.generalGirisBilgiKutulari {
+    background: #fff url("../images/icon_search_2.svg") no-repeat 2.5%;
+    box-shadow: 0 10px 30px 0 rgba(0,0,0,.1);
+    background-position-x: 98%;
+    font-size: 16px;
+    color: #2d3640;
+    border-radius: 2px;
+    border: 1px solid #bfc8d2;
+    padding: 23px 20px;
+    margin-left: 10px;
+}
+
+input[class=generalGirisBilgiKutulari]:focus {
+    outline: none;
+    border: 1px solid #2d3640;
+}
+
+.generalGirisBilgiKutulari::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #bfc8d2;
+}
+
+.mainMenu {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+    height: 44px;
+    margin-left: 90px;
+}
+
+.generalButton {
+    padding: 15px 32px;
+    background-color: #33c99b;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    width: 150px;
+    min-width: 150px;
+    height: 44px;
+    border-radius: 2px;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 8px 10px 10px;
+}
+
+.generallinkDiv {
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    border: none;
+    padding-top: 10px;
+}
+
+.generallinks {
+    font-size: 16px;
+    color: #5e6b79;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.generalGenelKategoriler {
+    display: flex;
+    justify-content: center;
+    background: rgb(244, 245, 247);
+    color: rgb(139, 149, 161);
+    font-size: 15px;
+}
+
+.generalGenelKategoriItemleri {
+    padding: 20px 10px;
+    border-right: 0.5px #E0E0E0 solid;
+}
+
+.generalGenelKategoriItemleri span {
+    margin-left: 5px;
+}
+
+.generalTopMenuLine {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    /*height: 100px;*/
+    width: 100%;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+    background-color: #fff;
+    margin-top: 60px;
+    border-top: 0.5px #E0E0E0 solid;
+}
+
+.generalTopMenuLineDivleri {
+    font-size: 14px;
+    font-weight: 800;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 4px;
+    color: rgb(139, 149, 161);
+    cursor: pointer;
+}
+
+.generalTopMenuLineDivleri:hover {
+    color: #2d3640;
+    border-bottom: 2px #2d3640 solid;
+    margin-bottom: 2px;
+}
+
+.generalAlanBaslik {
+    padding-top:160px;
+    width: 100%;
+    height: 115px;
+    border-bottom: 0.5px #E0E0E0 solid;
+}
+
+.generalAlanBaslik h1 {
+    margin:0px;
+    padding:0px;
+    margin-left: 250px;
+    font-family: ArailBold;
+    color: #2d3640;
+    font-size:36px;
+    font-weight: bold;
+}
+
+
+.benimIsimAcilPopup{
+    display:flex;
+    justify-content:center;
+}
+
+.benimIsimAcilnot1{
+    margin:0px;
+    font-weight: 500; 
+    font-size: 14px; 
+    color: rgb(139, 149, 161);
+}
+
+.benimIsimAcilnot2{
+    margin:0px;
+    font-family: ArailBold; 
+    font-weight: 100; 
+    font-size: 20px; 
+    color: #2d3640;
+}
+
+.temsiliImagesClass{
+    height: 50px;width: 50px;
+    border-radius:50%;
+}
+
+.temsiliDahasiDiv{
+    margin-left:5px;
+    padding-top:15px;padding-left:10px;
+    text-align: center;
+    height: 35px;width: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius:50%;
+}
+
+.benimIsimAcilHemenBaslaButton{
+    border: none;
+    border-radius: 2px;
+    background-image: linear-gradient(45deg,#e63262,#fd4056);
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    margin: 0 30px 0 0;
+    width: 200px;
+    height: 40px;
+}

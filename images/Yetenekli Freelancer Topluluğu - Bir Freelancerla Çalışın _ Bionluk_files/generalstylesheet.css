@@ -1,0 +1,126 @@
+@font-face {
+    font-family: sofia_pro_regular;
+    src: url(../fonts/sofia_pro_soft_light.tff);
+}
+
+body {
+    margin: 0;
+    font-family: sofia_pro_regular;
+    font-style: normal;
+    font-weight: 400; 
+}
+
+.mainTopBar{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    /*height: 100px;*/
+    width: 100%;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+    background-color: #fff;
+}
+
+.mainLogoDiv{
+    width: 120px;
+    height: 29px;
+    margin-top:18px;
+    margin-bottom:15px;
+}
+
+.mainLogo{
+    width: 120px;
+    height: 29px;
+    cursor: pointer;
+}
+
+/*maindeki alt pembebolumle değiştir.*/
+.pinkContainer{
+    padding-top:110px;
+    padding-bottom:110px;
+    background-image: linear-gradient(79deg,rgba(230,50,98,.9),rgba(253,64,86,.9));   
+}
+
+.pinkContainer p{
+    margin-top:0px;
+    color:white;
+    font-size:42px;
+    text-align:center;
+}
+
+.searchBoxModel1Container{
+    height:62px;
+    width: 480px;
+    margin-left: 25%;
+}
+.searchBoxModel1{
+    background: #fff url(../images/search_siyah.svg) no-repeat 2.5%;
+    font-size:16px;
+    border-radius:2px;
+    border:0;
+    border-bottom:1px solid #bfc8d2;
+    color: #2d3640;
+    padding: 9px 10px 11px 10px;
+    margin-top:10px;
+    margin-left:10px;
+    margin-right:20px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.GirisBilgiKutulari{
+    background: #fff url(../images/search_siyah.svg) no-repeat 2.5%;
+    font-size:16px;
+    border-radius:2px;
+    color: #2d3640;
+    border: 1px solid #bfc8d2;
+    padding: 9px 10px 11px 10px;
+    margin-bottom:20px;
+    margin-left:10px;
+}
+
+.GirisBilgiKutulari input:focus{
+    outline: none;
+    border: 1px solid #2d3640;
+}
+
+.mainMenu{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top:10px;
+    height: 44px;
+    margin-left:90px;
+}
+
+.Button{
+    padding: 15px 32px;
+    background-color: #33c99b;
+    border: none;
+    border-radius: 2px;
+    color:white;
+    cursor: pointer;
+    width: 150px; 
+    min-width: 150px;
+    height: 44px; 
+    border-radius: 2px;
+    font-weight: 400; 
+    font-size: 16px; 
+    padding: 8px 10px 10px;
+}
+
+.linkDiv{
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    border: none;
+    padding-top: 10px;   
+}
+
+.links{
+    font-size: 16px;
+    color:#5e6b79;
+    text-decoration: none;
+    font-weight: 300;
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>ui 16 px 1 zoom</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="WORK-IN-PROGRESS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_02_Showcase-Copy" transform="translate(-1054.000000, -274.000000)" fill="#2D3640">
+            <g id="//Body" transform="translate(-1.000000, 110.000000)">
+                <g id="Search" transform="translate(1.000000, 0.000000)">
+                    <g transform="translate(345.000000, 143.000000)" id="ui-16-px-1-zoom">
+                        <g transform="translate(709.000000, 21.000000)">
+                            <g id="Layer_1">
+                                <path d="M15.90125,14.13375 C17.01125,12.65625 17.67875,10.82625 17.67875,8.84 C17.67875,3.965 13.71375,0 8.83875,0 C3.96375,0 0,3.965 0,8.83875 C0,13.7125 3.965,17.67875 8.83875,17.67875 C10.82625,17.67875 12.655,17.01125 14.1325,15.90125 L17.865,19.63375 C18.11,19.8775 18.43,20 18.75,20 C19.07,20 19.39,19.8775 19.63375,19.63375 C20.1225,19.145 20.1225,18.355 19.63375,17.86625 L15.90125,14.13375 Z M8.83875,15.17875 C5.34375,15.17875 2.5,12.335 2.5,8.83875 C2.5,5.3425 5.34375,2.5 8.83875,2.5 C12.33375,2.5 15.1775,5.34375 15.1775,8.83875 C15.1775,12.33375 12.33375,15.17875 8.83875,15.17875 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
