@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="6px" viewBox="0 0 9 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="DONE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Notification-Settings" transform="translate(-983.000000, -488.000000)" fill="#A1A9A9">
+            <g transform="translate(444.000000, 170.000000)" id="Group-Copy-2">
+                <g transform="translate(50.000000, 297.000000)">
+                    <path d="M492.242641,23.2426407 L492.242641,20.2334187 C492.242641,19.6936159 491.794925,19.2426407 491.242641,19.2426407 C490.686506,19.2426407 490.242641,19.6862271 490.242641,20.2334187 L490.242641,24.2518627 C490.242641,24.5202618 490.353327,24.7667006 490.532519,24.9466622 C490.71486,25.1328945 490.961331,25.2426407 491.233419,25.2426407 L495.251863,25.2426407 C495.791666,25.2426407 496.242641,24.7949254 496.242641,24.2426407 C496.242641,23.6865055 495.799054,23.2426407 495.251863,23.2426407 L492.242641,23.2426407 Z" id="Combined-Shape" transform="translate(493.242641, 22.242641) rotate(-45.000000) translate(-493.242641, -22.242641) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -146,6 +146,7 @@ body {
 }
 
 .epostagirlink{
+    text-decoration: none;
     width: 344px;
     height: 60px;
     margin-top: 12px;

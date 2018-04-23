@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8" />
     <title>Yetenekli Freelancer Topluluğu - Bir Freelancerla Çalışın | Bionluk </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/kayitStylesheet.css">
    <!-- <script src="main.js"></script> -->
 </head>
@@ -42,7 +41,7 @@
     <div style="height:15px;"></div>
 
     <div class="flexBox">
-        <a class="epostagirlink">e-posta ile kayıt ol</a>
+        <a href="kayitol.php" class="epostagirlink">e-posta ile kayıt ol</a>
     </div>
 
     <div style="height:60px;"></div>
@@ -52,7 +51,7 @@
     </div>
 
     <div class="flexBox">
-     <p class="kucukaciklamalar" style="margin-top:0px;font-size:16px;">  Zaten bir hesabın var mı? <a class="hemenKaydol">Giriş Yap</a> </p>
+     <p class="kucukaciklamalar" style="margin-top:0px;font-size:16px;">  Zaten bir hesabın var mı? <a href="girisYap.php" class="hemenKaydol">Giriş Yap</a> </p>
     </div>
 
     <div style="height:45px;"></div>

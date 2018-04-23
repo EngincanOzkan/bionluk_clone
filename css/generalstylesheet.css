@@ -4,7 +4,7 @@
 }
 
 @font-face {
-    font-family: ArailBold;
+    font-family: sofiaProBold;
     src: url("../fonts/SofiaProBold.ttf");
 }
 
@@ -25,11 +25,24 @@ body {
     background-color: #fff;
 }
 
+.generalTopBarContainer{
+    width:1303px;
+    margin-top:5px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.generalTopBarContainer2{
+    display: flex;
+    justify-content: space-between;
+}
+
 .generalLogoDiv {
+    display: inline-block;
     width: 120px;
     height: 29px;
-    margin-top: 18px;
-    margin-bottom: 15px;
+    margin-right:15%;
+    margin-top:15px;
 }
 
 .generalLogo {
@@ -59,9 +72,9 @@ body {
 }
 
 .searchBoxModel1Container {
+    display: inline-block;
     height: 62px;
     width: 480px;
-    margin-left: 25%;
 }
 
 .searchBoxModel1 {
@@ -73,8 +86,6 @@ body {
     color: #2d3640;
     padding: 9px 10px 11px;
     margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 20px;
     padding-left: 35px;
 }
 
@@ -104,13 +115,11 @@ input[class=generalGirisBilgiKutulari]:focus {
     color: #bfc8d2;
 }
 
-.mainMenu {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-top: 10px;
-    height: 44px;
-    margin-left: 90px;
+.mainMenu{
+   margin-top:5px;
+   display: inline-block;
+   width: 380px;
+   margin-left:100px;
 }
 
 .generalButton {
@@ -130,6 +139,7 @@ input[class=generalGirisBilgiKutulari]:focus {
 }
 
 .generallinkDiv {
+    display: inline-block;
     height: 40px;
     width: 100px;
     cursor: pointer;
@@ -192,58 +202,66 @@ input[class=generalGirisBilgiKutulari]:focus {
 }
 
 .generalAlanBaslik {
-    padding-top:160px;
+    padding-top: 160px;
     width: 100%;
     height: 115px;
-    border-bottom: 0.5px #E0E0E0 solid;
 }
 
 .generalAlanBaslik h1 {
-    margin:0px;
-    padding:0px;
+    margin: 0;
+    padding: 0;
     margin-left: 250px;
-    font-family: ArailBold;
+    font-family: sofiaProBold;
     color: #2d3640;
-    font-size:36px;
+    font-size: 36px;
     font-weight: bold;
 }
 
-
-.benimIsimAcilPopup{
-    display:flex;
-    justify-content:center;
+.benimIsimAcilPopup {
+    border-bottom: 1px #eaedf2 solid;
+    border-top: 1px #eaedf2 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.benimIsimAcilnot1{
-    margin:0px;
-    font-weight: 500; 
-    font-size: 14px; 
+.benimIsimAcilnot1 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
     color: rgb(139, 149, 161);
+    line-height: 15px;
 }
 
-.benimIsimAcilnot2{
-    margin:0px;
-    font-family: ArailBold; 
-    font-weight: 100; 
-    font-size: 20px; 
+.benimIsimAcilnot2 {
+    margin: 0;
+    font-family: sofiaProBold;
+    font-size: 20px;
     color: #2d3640;
 }
 
-.temsiliImagesClass{
-    height: 50px;width: 50px;
-    border-radius:50%;
+.temsiliImagesClass {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
 }
 
-.temsiliDahasiDiv{
-    margin-left:5px;
-    padding-top:15px;padding-left:10px;
-    text-align: center;
-    height: 35px;width: 40px;
+.temsiliDahasiDiv {
+    height: 50px;
+    width: 50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius:50%;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 35px;
+}
+.temsiliDahasiDiv div {
+    padding: 11px;
+    height: 50px;
+    width: 50px;
 }
 
-.benimIsimAcilHemenBaslaButton{
+.benimIsimAcilHemenBaslaButton {
     border: none;
     border-radius: 2px;
     background-image: linear-gradient(45deg,#e63262,#fd4056);
@@ -253,4 +271,683 @@ input[class=generalGirisBilgiKutulari]:focus {
     margin: 0 30px 0 0;
     width: 200px;
     height: 40px;
+}
+
+.benimIsimAcilRocket {
+    height: 25px;
+    width: 25px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.cevrimiciFreelancerlar {
+
+    color: #4add1d;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.benimIsimAcilPopupContainer {
+    display: inline;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.AlandaBulArkaplan {
+    background: #f4f5f7;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.AlandaBulArkaplanContainer {
+    width: 1200px;
+    white-space: nowrap;
+    /* this does the trick */
+    overflow: hidden;
+    /* this preven ts the grey divs from overflowing */
+    display: inline-block;
+}
+
+.alanAltKategorilerContainer {
+    background: #fff;
+    border: 1px #eaedf2 solid;
+    width: 267px;
+    min-height: 220px;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+.alanAltKategorilerContainer p {
+    font-family: sofiaProBold;
+    color: #2d3640;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.alanAltKategoriler {
+    display: flex;
+    display: block;
+    width: 225px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+}
+
+.alanAltKategoriler a {
+    text-decoration: none;
+    color: #8b95a1;
+}
+
+.alanAltKategorilerItemler {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.alanAltKategorilerAdet {
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+.sureyeGöreListele {
+    border: 1px #eaedf2 solid;
+    background: #fff;
+    width: 267px;
+    height: 100px;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: inline-block;
+
+}
+
+.sureyeGoreListeleYazi {
+    margin-left: 18px;
+    color: rgb(45, 54, 64);
+    font-size: 12px;
+}
+
+.sureyeGoreListeleSelect {
+    margin-left: 20px;
+    color: rgb(45, 54, 64);
+    width: 225px;
+    height: 50px;
+    border: 1px #eaedf2 solid;
+    border-radius: 2%;
+    padding-left: 10px;
+    font-size: 14px;
+    background: url("../images/icon_alt_ok_1.svg") no-repeat 100%;
+    background-position-x: 200px;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.filtreyeGöreSirala {
+    background: #fff;
+    border: 1px #eaedf2 solid;
+    width: 870px;
+    height: 60px;
+    display: inline-block;
+    margin-left: 30px;
+    vertical-align: top;
+}
+
+.filtreyeGöreSiralaSpan {
+    padding-top: 19px;
+    color: #8b95a1;
+    float: right;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.filtreyeGöreSiralaSelect {
+    float: right;
+    border: 0;
+    width: 160px;
+    height: 40px;
+    background: url("../images/icon_alt_ok_1.svg") no-repeat 100%;
+    background-position-x: 140px;
+    text-indent: 15px;
+    -webkit-appearance: none;
+    border-radius: 0;
+    border-bottom: 1px #8b95a1 solid;
+    margin-right: 20px;
+    margin-top: 7px;
+    font-size: 12px;
+}
+
+select.filtreyeGöreSiralaSelect,
+select.sureyeGoreListeleSelect {
+    /*for firefox select arrows*/
+    -moz-appearance: none;
+    /*for chrome select arrows*/
+    -webkit-appearance: none;
+}
+
+.sureyeGoreListeleSelect:focus {
+    border: 0;
+    outline: 0;
+    border: 1px #eaedf2 solid;
+}
+
+.filtreyeGöreSiralaSelect:hover {
+    border: 0;
+    outline: 0;
+    border-bottom: 1px rgb(45, 54, 64) solid;
+}
+
+/*for IE10 select arrows*/
+select.filtreyeGöreSiralaSelect,
+select.sureyeGoreListeleSelect ::-ms-expand {
+    display: none;
+}
+
+.urunlerinContaineri {
+    display: inline-block;
+    width: 900px;
+    vertical-align: top;
+    margin-top: -210px;
+    margin-left: -5px;
+}
+
+.UrunOzellikleriUstContainer2 {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 1200px;
+}
+
+.UrunOzellikleriUstContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.urunOzellkleriBaslikContainer {
+    display: inline-block;
+    width: 400px;
+}
+
+.UrunOzellikleriUst {
+    background: #fff;
+    padding-top: 125px;
+    height: 200px;
+}
+
+.UrunOzellikleriUst a,
+span {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(45, 54, 64);
+    letter-spacing: 0.5px;
+}
+
+.UrunOzellikleriBaslik {
+    font-weight: 900;
+    font-size: 28px;
+    display: inline-block;
+    width: 700px;
+    margin-top: 20px;
+    overflow: auto;
+    white-space: pre-wrap;
+}
+
+.hemenAlkutusu {
+    display: inline-block;
+    height: 80px;
+    width: 400px;
+    margin-left: 50px;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+    border: 1px #eaedf2 solid;
+    border-radius: 4px;
+    vertical-align: top;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.hemenAlkutusuCenterContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.hemenAlkutusuFiyat {
+    display: inline-block;
+    font-size: 28px;
+    color: rgb(45, 54, 64);
+    margin: 0 0 0 100px;
+}
+
+.hemenAlkutusuFiyat span {
+    font-family: sofiaProBold;
+    font-size: 28px;
+}
+
+.urunOzellikZaman {
+    height: 30px;
+    width: 150px;
+    display: inline-block;
+    color: #8b95a0;
+}
+
+.urunOzellikZaman img {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.urunOzellikYorum {
+    height: 30px;
+    width: 150px;
+    display: inline-block;
+    border-right: 1px #eaedf2 solid;
+    border-left: 1px #eaedf2 solid;
+}
+
+.urunOzellikYorum img {
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.urunOzellikYorum a {
+    font-size: 16px;
+}
+
+.urunOzellikBegeni {
+    height: 30px;
+    width: 150px;
+    display: inline-block;
+    color: #8b95a0;
+}
+
+.urunOzellikBegeni img {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.freelancerKisaTanitim {
+    display: inline-block;
+    height: 365px;
+    width: 365px;
+    background: #fff;
+    border: 1px #eaedf2 solid;
+}
+
+.freelancerKisaTanitimContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.freelancerKisaTanitimResim {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+.productScoreP {
+    margin: 0;
+    padding: 0;
+    color: #fdc22c;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.productScoreP span {
+    color: #8b95a0;
+    margin-left: 5px;
+}
+
+.freelancerSaat {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-right: 1px #eaedf2 solid;
+    color: #8b95a0;
+}
+.freelancerYer {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #8b95a0;
+}
+
+.freelanceraMesajGonder {
+    background-color: white;
+    color: rgb(45, 54, 64);
+    border: 1px solid #dbdcdc;
+    border-radius: 2px;
+    margin-top: 10px;
+    height: 44px;
+    width: 260px;
+    font-weight: 600;
+    font-size: 12px;
+
+}
+
+.freelancerKisaTanitimIsim {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.freelancerKisaTanitimAlan {
+    margin: 0;
+    padding: 0;
+    color: #8b95a0;
+}
+
+.ortYanitSüresi {
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #8b95a0;
+}
+
+.freelanceriTakipEt {
+    background: #fff;
+    height: 150px;
+    width: 365px;
+    border-right: 1px #eaedf2 solid;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.freelanceriFavorilerimeEkle {
+    background-color: white;
+    background: url("../images/tansel_bionluk_like_bos_s.svg") no-repeat;
+    background-position: 20% 50%;
+    color: rgb(45, 54, 64);
+    border: 1px solid #dbdcdc;
+    border-radius: 2px;
+    margin-top: 10px;
+    height: 44px;
+    width: 260px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.freelancerRaporlaText {
+    color: #fd4056;
+    text-decoration: none;
+}
+
+.paylasText {
+    color: #8b95a0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.freelancerFosyalMedyaIconlari {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.FavoriVeFreelancerContainer {
+    height: 1303;
+    display: inline-block;
+}
+
+.urunIcerikleri {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 780px;
+    background: white;
+    margin-right: 25px;
+    border: 1px #eaedf2 solid;
+}
+
+.urunIcerikImageDiv {
+    height: 400px;
+    width: 700px;
+    background: thistle;
+    margin: 25px auto auto;
+}
+
+.urunIcerikleriAyirici {
+
+    display: block;
+    height: 1px;
+    width: 725px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 15px auto auto;
+    padding: 0;
+}
+
+.urunOzet {
+    font-family: sofiaProBold;
+    font-weight: 200;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    color: #2d3640;
+}
+
+.urunOzetAciklamasi {
+    color: rgb(139, 149, 161);
+    white-space: pre-wrap;
+    width: 700px;
+    margin: auto auto 40px;
+}
+
+.EkHizmetCheckBox {
+    margin-top:5px;
+    display: inline-block;
+    margin-left: 40px;
+    vertical-align: top;
+    height: 20px;
+    width: 20px;
+}
+
+.EkHizmetContainer {
+    display: inline-block;
+    font-family: sofiaProBold;
+    font-weight: 100;
+
+    color: #2d3640;
+    white-space: pre-wrap;
+    width: 550px;
+}
+
+.ekHizmetFiyatListeleSelect {
+    margin-left: 30px;
+    color: rgb(45, 54, 64);
+    width: 100px;
+    height: 50px;
+    border: 1px #eaedf2 solid;
+    border-radius: 2%;
+    padding-left: 10px;
+    font-size: 14px;
+    background: url("../images/icon_alt_ok_1.svg") no-repeat 100%;
+    background-position-x: 80px;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.HemenAlButton {
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px 32px;
+    background-color: #33c99b;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 200px;
+    height: 54px;
+    border-radius: 2px;
+    font-weight: 300;
+    padding: 8px 10px 10px;
+    margin-bottom: 50px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.suIsiAlArtik {
+    float: right;
+    width: 500px;
+    height: 100px;
+    margin-top: 25px;
+}
+
+.suIsiAlArtikOzellikler {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-right: 1px #eaedf2 solid;
+}
+
+.aracizgiHemenAl {
+    display: inline-block;
+    vertical-align: middle;
+    height: 54px;
+    width: 1px;
+    background: #eaedf2;
+    margin-left: 30px;
+}
+
+.HemenAlButtonText {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.HemenAlButtonTextStyle {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+}
+
+.yorumlar {
+    display: inline-block;
+  
+    width: 780px;
+    background: white;
+    margin-right: 25px;
+    border: 1px #eaedf2 solid;
+    border-top: 0.5px #eaedf2 solid;
+    border-bottom: 0.5px #eaedf2 solid;
+    margin-top: 10px;
+}
+
+.yorumlarContainers {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 0.5px #eaedf2 solid;
+    border-bottom: 0.5px #eaedf2 solid;
+}
+
+.degerlendirmeSelect {
+    float: right;
+    border: 0;
+    width: 200px;
+    height: 40px;
+    background: url("../images/icon_alt_ok_1.svg") no-repeat 100%;
+    background-position-x: 180px;
+    text-indent: 15px;
+    -webkit-appearance: none;
+    border-radius: 0;
+    border-bottom: 1px #8b95a1 solid;
+    margin-right: 20px;
+    margin-top: -3px;
+    font-size: 12px;
+}
+
+.degerlendirmeText {
+    font-family: sofiaProBold;
+    font-weight: 100;
+    margin-left: 40px;
+    color: #2d3640;
+    font-size: 20px;
+}
+
+.siralamaText {
+    float: right;
+    font-family: sofia_pro_regular;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 20px;
+    color: #8b95a0;
+}
+
+.HizmetDegerlendirmesi {
+    display: inline-block;
+    height: 100px;
+    width: 550px;
+    background: #f9fafb;
+}
+
+.HizmetDegerlendirmesiImg {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.HizmetDegerlendirmesiP {
+    margin-top: 5px;
+    margin-left: 20px;
+    font-weight: 600;
+    color: rgb(45, 54, 64);
+}
+
+.HizmetDegerlendirmesiYildizlar {
+    margin-top: -15px;
+    margin-left: 20px;
+}
+
+.totalHizmetScore {
+    height: 100px;
+    width: 226px;
+    background: #fff;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.totalHizmetScoreContainer p {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: #fdc22c;
+}
+
+.totalHizmetScoreContainer span {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    margin-top: -15px;
+}
+
+.yorumlarContainersImage {
+    vertical-align: top;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+}
+
+.yorumlarContainersVariables {
+    margin-left:20px;
+    display: inline-block;
+    width: 550px;
+}
+
+.yorumlarContainersVariables p {
+    white-space: pre-line;
+    color: #8b95a0;
+}
+
+.yorumlarContainersUser{
+    margin-top: 0px;
+    margin-bottom:7px;
+    color: rgb(45, 54, 64);
+    font-weight: bold;
+}
+
+.yorumlarContainersUserYildizlar {
+    margin-top:-10px;
+}
+
+.yorumlarTarih{
+    display: inline-block;
+    vertical-align: top;
+    color: #8b95a0;
 }

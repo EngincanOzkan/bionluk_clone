@@ -1,16 +1,165 @@
 @font-face {
     font-family: sofia_pro_regular;
-    src: url(../fonts/sofia_pro_soft_light.tff);
+    src: url("../fonts/sofia_pro_soft_light.tff");
+}
+
+@font-face {
+    font-family: sofiaProBold;
+    src: url("../fonts/SofiaProBold.ttf");
 }
 
 body {
     margin: 0;
     font-family: sofia_pro_regular;
     font-style: normal;
-    font-weight: 400; 
+    font-weight: 400;
 }
 
-.mainTopBar{
+.generalTopBar {
+    position: fixed;
+    display: flex;
+    justify-content: left;
+    /*height: 100px;*/
+    width: 100%;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+    background-color: #fff;
+}
+
+.generalLogoDiv {
+    width: 120px;
+    height: 29px;
+    margin: 18px 20% 15px 5%;
+}
+
+.generalLogo {
+    width: 120px;
+    height: 29px;
+    cursor: pointer;
+}
+
+/*maindeki alt pembebolumle değiştir.*/
+.pinkContainer {
+    padding-top: 110px;
+    padding-bottom: 80px;
+    background-image: linear-gradient(79deg,rgba(230,50,98,.9),rgba(253,64,86,.9));
+}
+
+.pinkContainer p {
+    margin-top: 0;
+    color: white;
+    font-size: 42px;
+    text-align: center;
+}
+
+.flexBox {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.searchBoxModel1Container {
+    height: 62px;
+    width: 480px;
+}
+
+.searchBoxModel1 {
+    background: #fff url("../images/search_siyah.svg") no-repeat 2.5%;
+    font-size: 16px;
+    border-radius: 2px;
+    border: 0;
+    border-bottom: 1px solid #bfc8d2;
+    color: #2d3640;
+    padding: 9px 10px 11px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    padding-left: 35px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.generalGirisBilgiKutulari {
+    background: #fff url("../images/icon_search_2.svg") no-repeat 2.5%;
+    box-shadow: 0 10px 30px 0 rgba(0,0,0,.1);
+    background-position-x: 98%;
+    font-size: 16px;
+    color: #2d3640;
+    border-radius: 2px;
+    border: 1px solid #bfc8d2;
+    padding: 23px 20px;
+    margin-left: 10px;
+}
+
+input[class=generalGirisBilgiKutulari]:focus {
+    outline: none;
+    border: 1px solid #2d3640;
+}
+
+.generalGirisBilgiKutulari::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #bfc8d2;
+}
+
+.mainMenu {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+    height: 44px;
+    margin-left: 90px;
+}
+
+.generalButton {
+    padding: 15px 32px;
+    background-color: #33c99b;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    width: 150px;
+    min-width: 150px;
+    height: 44px;
+    border-radius: 2px;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 8px 10px 10px;
+}
+
+.generallinkDiv {
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    border: none;
+    padding-top: 10px;
+}
+
+.generallinks {
+    font-size: 16px;
+    color: #5e6b79;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.generalGenelKategoriler {
+    display: flex;
+    justify-content: center;
+    background: rgb(244, 245, 247);
+    color: rgb(139, 149, 161);
+    font-size: 15px;
+}
+
+.generalGenelKategoriItemleri {
+    padding: 20px 10px;
+    border-right: 0.5px #E0E0E0 solid;
+}
+
+.generalGenelKategoriItemleri span {
+    margin-left: 5px;
+}
+
+.generalTopMenuLine {
     position: fixed;
     display: flex;
     justify-content: center;
@@ -18,109 +167,624 @@ body {
     width: 100%;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
     background-color: #fff;
+    margin-top: 60px;
+    border-top: 0.5px #E0E0E0 solid;
 }
 
-.mainLogoDiv{
-    width: 120px;
-    height: 29px;
-    margin-top:18px;
-    margin-bottom:15px;
-}
-
-.mainLogo{
-    width: 120px;
-    height: 29px;
+.generalTopMenuLineDivleri {
+    font-size: 14px;
+    font-weight: 800;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 4px;
+    color: rgb(139, 149, 161);
     cursor: pointer;
 }
 
-/*maindeki alt pembebolumle değiştir.*/
-.pinkContainer{
-    padding-top:110px;
-    padding-bottom:110px;
-    background-image: linear-gradient(79deg,rgba(230,50,98,.9),rgba(253,64,86,.9));   
-}
-
-.pinkContainer p{
-    margin-top:0px;
-    color:white;
-    font-size:42px;
-    text-align:center;
-}
-
-.searchBoxModel1Container{
-    height:62px;
-    width: 480px;
-    margin-left: 25%;
-}
-.searchBoxModel1{
-    background: #fff url(../images/search_siyah.svg) no-repeat 2.5%;
-    font-size:16px;
-    border-radius:2px;
-    border:0;
-    border-bottom:1px solid #bfc8d2;
+.generalTopMenuLineDivleri:hover {
     color: #2d3640;
-    padding: 9px 10px 11px 10px;
-    margin-top:10px;
-    margin-left:10px;
-    margin-right:20px;
+    border-bottom: 2px #2d3640 solid;
+    margin-bottom: 2px;
 }
 
-input:focus{
-    outline: none;
+.generalAlanBaslik {
+    padding-top: 160px;
+    width: 100%;
+    height: 115px;
 }
 
-.GirisBilgiKutulari{
-    background: #fff url(../images/search_siyah.svg) no-repeat 2.5%;
-    font-size:16px;
-    border-radius:2px;
+.generalAlanBaslik h1 {
+    margin: 0;
+    padding: 0;
+    margin-left: 250px;
+    font-family: sofiaProBold;
     color: #2d3640;
-    border: 1px solid #bfc8d2;
-    padding: 9px 10px 11px 10px;
-    margin-bottom:20px;
-    margin-left:10px;
+    font-size: 36px;
+    font-weight: bold;
 }
 
-.GirisBilgiKutulari input:focus{
-    outline: none;
-    border: 1px solid #2d3640;
+.benimIsimAcilPopup {
+    border-bottom: 1px #eaedf2 solid;
+    border-top: 1px #eaedf2 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.mainMenu{
+.benimIsimAcilnot1 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(139, 149, 161);
+    line-height: 15px;
+}
+
+.benimIsimAcilnot2 {
+    margin: 0;
+    font-family: sofiaProBold;
+    font-size: 20px;
+    color: #2d3640;
+}
+
+.temsiliImagesClass {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.temsiliDahasiDiv {
+    height: 50px;
+    width: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 35px;
+}
+.temsiliDahasiDiv div {
+    padding: 11px;
+    height: 50px;
+    width: 50px;
+}
+
+.benimIsimAcilHemenBaslaButton {
+    border: none;
+    border-radius: 2px;
+    background-image: linear-gradient(45deg,#e63262,#fd4056);
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    margin: 0 30px 0 0;
+    width: 200px;
+    height: 40px;
+}
+
+.benimIsimAcilRocket {
+    height: 25px;
+    width: 25px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.cevrimiciFreelancerlar {
+
+    color: #4add1d;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.benimIsimAcilPopupContainer {
+    display: inline;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.AlandaBulArkaplan {
+    background: #f4f5f7;
     display: flex;
     justify-content: center;
-    align-content: center;
-    margin-top:10px;
-    height: 44px;
-    margin-left:90px;
+    padding-top: 20px;
 }
 
-.Button{
+.AlandaBulArkaplanContainer {
+    width: 1200px;
+    white-space: nowrap;
+    /* this does the trick */
+    overflow: hidden;
+    /* this preven ts the grey divs from overflowing */
+    display: inline-block;
+}
+
+.alanAltKategorilerContainer {
+    background: #fff;
+    border: 1px #eaedf2 solid;
+    width: 267px;
+    min-height: 220px;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+.alanAltKategorilerContainer p {
+    font-family: sofiaProBold;
+    color: #2d3640;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.alanAltKategoriler {
+    display: flex;
+    display: block;
+    width: 225px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+}
+
+.alanAltKategoriler a {
+    text-decoration: none;
+    color: #8b95a1;
+}
+
+.alanAltKategorilerItemler {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.alanAltKategorilerAdet {
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+.sureyeGöreListele {
+    border: 1px #eaedf2 solid;
+    background: #fff;
+    width: 267px;
+    height: 100px;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: inline-block;
+
+}
+
+.sureyeGoreListeleYazi {
+    margin-left: 18px;
+    color: rgb(45, 54, 64);
+    font-size: 12px;
+}
+
+.sureyeGoreListeleSelect {
+    margin-left: 20px;
+    color: rgb(45, 54, 64);
+    width: 225px;
+    height: 50px;
+    border: 1px #eaedf2 solid;
+    border-radius: 2%;
+    padding-left: 10px;
+    font-size: 14px;
+    background: url("../images/icon_alt_ok_1.svg") no-repeat 100%;
+    background-position-x: 200px;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.filtreyeGöreSirala {
+    background: #fff;
+    border: 1px #eaedf2 solid;
+    width: 870px;
+    height: 60px;
+    display: inline-block;
+    margin-left: 30px;
+    vertical-align: top;
+}
+
+.filtreyeGöreSiralaSpan {
+    padding-top: 19px;
+    color: #8b95a1;
+    float: right;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.filtreyeGöreSiralaSelect {
+    float: right;
+    border: 0;
+    width: 160px;
+    height: 40px;
+    background: url("../images/icon_alt_ok_1.svg") no-repeat 100%;
+    background-position-x: 140px;
+    text-indent: 15px;
+    -webkit-appearance: none;
+    border-radius: 0;
+    border-bottom: 1px #8b95a1 solid;
+    margin-right: 20px;
+    margin-top: 7px;
+    font-size: 12px;
+}
+
+select.filtreyeGöreSiralaSelect,
+select.sureyeGoreListeleSelect {
+    /*for firefox select arrows*/
+    -moz-appearance: none;
+    /*for chrome select arrows*/
+    -webkit-appearance: none;
+}
+
+.sureyeGoreListeleSelect:focus {
+    border: 0;
+    outline: 0;
+    border: 1px #eaedf2 solid;
+}
+
+.filtreyeGöreSiralaSelect:hover {
+    border: 0;
+    outline: 0;
+    border-bottom: 1px rgb(45, 54, 64) solid;
+}
+
+/*for IE10 select arrows*/
+select.filtreyeGöreSiralaSelect,
+select.sureyeGoreListeleSelect ::-ms-expand {
+    display: none;
+}
+
+.urunlerinContaineri {
+    display: inline-block;
+    width: 900px;
+    vertical-align: top;
+    margin-top: -210px;
+    margin-left: -5px;
+}
+
+.UrunOzellikleriUstContainer2 {
+    display: inline-block;
+    white-space : nowrap;
+    overflow: hidden;
+    width: 1200px;
+}
+
+.UrunOzellikleriUstContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.urunOzellkleriBaslikContainer{
+    display: inline-block;
+    width: 400px;
+}
+
+.UrunOzellikleriUst {
+    background: #fff;
+    padding-top: 125px;
+    height: 200px;
+}
+
+.UrunOzellikleriUst a,
+span {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(45, 54, 64);
+    letter-spacing: 0.5px;
+}
+
+.UrunOzellikleriBaslik {
+    font-weight: 900;
+    font-size: 28px;
+    display: inline-block;
+    width: 700px;
+    margin-top:20px;
+    overflow: auto;
+    white-space: pre-wrap; 
+}
+
+.hemenAlkutusu {
+    display: inline-block;
+    height: 80px;
+    width: 400px;
+    margin-left: 50px;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+    border: 1px #eaedf2 solid;
+    border-radius: 4px;
+    vertical-align: top;
+    margin-top:30px;
+    margin-bottom:10px;
+}
+
+.hemenAlkutusuCenterContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.hemenAlkutusuFiyat {
+    display: inline-block;
+    font-size: 28px;
+    color: rgb(45, 54, 64);
+    margin: 0 0 0 100px;
+}
+
+.hemenAlkutusuFiyat span {
+    font-family: sofiaProBold;
+    font-size: 28px;
+}
+
+.urunOzellikZaman {
+    height: 30px;
+    width: 150px;
+    display: inline-block;
+    color: #8b95a0;
+}
+
+.urunOzellikZaman img {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.urunOzellikYorum {
+    height: 30px;
+    width: 150px;
+    display: inline-block;
+    border-right: 1px #eaedf2 solid;
+    border-left: 1px #eaedf2 solid;
+}
+
+.urunOzellikYorum img {
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.urunOzellikYorum a {
+    font-size: 16px;
+}
+
+.urunOzellikBegeni {
+    height: 30px;
+    width: 150px;
+    display: inline-block;
+    color: #8b95a0;
+}
+
+.urunOzellikBegeni img {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.freelancerKisaTanitim {
+    display: inline-block;
+    height: 365px;
+    width: 365px;
+    background: #fff;
+    border: 1px #eaedf2 solid;
+}
+
+.freelancerKisaTanitimContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.freelancerKisaTanitimResim {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top:40px;
+}
+
+.productScoreP{
+    margin:0;
+    padding:0;
+    color: #fdc22c;
+    margin-left: 5px;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+.productScoreP span{
+    color: #8b95a0;
+    margin-left: 5px;
+}
+
+.freelancerSaat{
+    padding-left:5px;
+    padding-right:5px;
+    border-right: 1px #eaedf2 solid;
+    color: #8b95a0;
+}
+.freelancerYer{
+    padding-left:5px;
+    padding-right:5px;
+    color: #8b95a0;
+}
+
+.freelanceraMesajGonder{
+        background-color: white;
+        color: rgb(45, 54, 64);
+        border: 1px solid #dbdcdc;
+        border-radius:2px;
+        margin-top:10px;
+        height: 44px;
+        width: 260px;
+        font-weight: 600;
+        font-size:12px;
+
+}
+
+.freelancerKisaTanitimIsim {
+    margin:0;
+    padding:0;
+    margin-top:10px;
+}
+
+.freelancerKisaTanitimAlan {
+    margin:0;
+    padding:0;
+    color: #8b95a0;
+}
+
+.ortYanitSüresi{
+    margin:0;
+    padding:0;
+    margin-left:10px;
+    margin-top:10px;
+    color: #8b95a0;
+}
+
+.freelanceriTakipEt{
+    background: #fff;
+    height: 150px;
+    width: 365px;   
+    border-right: 1px #eaedf2 solid;
+    margin-top:10px;
+    display: inline-block;
+}
+
+.freelanceriFavorilerimeEkle{
+    background-color: white;
+    background: url("../images/tansel_bionluk_like_bos_s.svg") no-repeat;
+    background-position: 20% 50%;
+    color: rgb(45, 54, 64);
+    border: 1px solid #dbdcdc;
+    border-radius:2px;
+    margin-top:10px;
+    height: 44px;
+    width: 260px;
+    font-weight: 600;
+    font-size:12px;
+}
+
+.freelancerRaporlaText{
+    color: #fd4056;
+    text-decoration: none;
+}
+
+.paylasText{
+    color: #8b95a0;
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+.freelancerFosyalMedyaIconlari{
+    margin-left:10px;
+    margin-right:10px;
+}
+
+
+.FavoriVeFreelancerContainer{
+    height:1303;
+    display: inline-block;
+}
+
+.urunIcerikleri{
+    display: inline-block;
+    vertical-align: top;
+    height: 1303px;
+    width: 780px;
+    background: white;
+    margin-right:25px;
+    border-right: 1px #eaedf2 solid;
+}
+
+
+.urunIcerikImageDiv{    
+    height:400px;
+    width: 700px;
+    background: thistle;
+    margin:auto;
+    margin-top:25px;
+}
+
+.urunIcerikleriAyirici{
+   
+    display: block;
+    height: 1px;
+    width:725px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin:auto;
+    margin-top:15px;
+    padding: 0; 
+}
+
+.urunOzet{
+    font-family: sofiaProBold;
+    font-weight: 200;
+    margin-left: 40px;
+    margin-bottom:40px;
+    color: #2d3640;
+}
+
+.urunOzetAciklamasi{
+    color: rgb(139, 149, 161);
+    white-space: pre-wrap;
+    width: 700px;
+    margin:auto;
+    margin-bottom:40px;
+}
+
+.EkHizmetCheckBox{
+    display: inline-block;
+    margin-left:40px;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+}
+
+.EkHizmetContainer{
+    display: inline-block;
+    font-family: sofiaProBold;
+    font-weight: 100;
+   
+    color: #2d3640;
+    white-space: pre-wrap;
+    width: 550px;
+}
+
+.ekHizmetFiyatListeleSelect{
+    margin-left: 30px;
+    color: rgb(45, 54, 64);
+    width: 100px;
+    height: 50px;
+    border: 1px #eaedf2 solid;
+    border-radius: 2%;
+    padding-left: 10px;
+    font-size: 14px;
+    background: url("../images/icon_alt_ok_1.svg") no-repeat 100%;
+    background-position-x: 80px;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.HemenAlButton{
     padding: 15px 32px;
+    float: right;
     background-color: #33c99b;
     border: none;
     border-radius: 2px;
     color:white;
     cursor: pointer;
-    width: 150px; 
-    min-width: 150px;
+    width: 200px; 
     height: 44px; 
     border-radius: 2px;
-    font-weight: 400; 
-    font-size: 16px; 
+    font-weight: 300; 
+    font-size: 14px; 
     padding: 8px 10px 10px;
+    margin-top:10px;
+    margin-bottom:50px;
 }
 
-.linkDiv{
-    height: 40px;
-    width: 100px;
-    cursor: pointer;
-    border: none;
-    padding-top: 10px;   
+.suIsiAlArtik{
+    float:right;
+    width: 500px;
+    height: 100px;
+  
 }
 
-.links{
-    font-size: 16px;
-    color:#5e6b79;
-    text-decoration: none;
-    font-weight: 300;
+.suIsiAlArtikOzellikler{
+
+margin-left: 20px;
+border-right: 1px #eaedf2 solid;
 }

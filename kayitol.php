@@ -1,3 +1,13 @@
+<?php
+    include("classes/dbConnection.php");
+
+    $islemler = new islemler();
+    if(isset($_POST['onay'])){
+        if($_POST['onay']=="Kayıt Ol"){
+            $islemler->kayitOl();
+        }
+    }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,15 +25,15 @@
     </div>
 
     <div style="height:60px"></div>
-
+   
      <div class="flexBox">
         <p class="kucukaciklamalar" style="margin-top:0px;font-size:16px;"><a href="#" class="hemenKaydol">Facebook</a> veya <a href="#" class="hemenKaydol">Google</a> ile kaydolun.</p>
     </div>
 
-    <form>
+    <form method="POST" action="kayitol.php">
     <div class="flexBox">
-            <input placeholder="İsim" type="text" style="width:155px;margin-bottom:5px;" class="GirisBilgiKutulari"/>
-            <input placeholder="Soy İsim" type="text" style="width:155px;margin-bottom:5px;" class="GirisBilgiKutulari"/> 
+            <input name="isim" placeholder="İsim" type="text" style="width:155px;margin-bottom:5px;" class="GirisBilgiKutulari"/>
+            <input name="soyisim" placeholder="Soy İsim" type="text" style="width:155px;margin-bottom:5px;" class="GirisBilgiKutulari"/> 
     </div>
     <div class="flexBox" style="flex-direction: column;align-items:center;">
         <div>
@@ -31,14 +41,14 @@
             <span class="bionluklink" name="bionluklink"> bionluk.com/ <span>
         </div> 
         
-        <input placeholder="kullanıcı Adı" type="text" style="width:345px;" class="GirisBilgiKutulari"/>
+        <input name="kullaniciadi" placeholder="kullanıcı Adı" type="text" style="width:345px;" class="GirisBilgiKutulari"/>
     </div>
     </div> 
     <div class="flexBox">
-            <input placeholder="E-mail" type="text" style="width:345px;" class="GirisBilgiKutulari"/> 
+            <input name="email" placeholder="E-mail" type="email" style="width:345px;" class="GirisBilgiKutulari"/> 
     </div> 
     <div class="flexBox">        
-            <input placeholder="Şifre" type="password" style="width:345px;" class="GirisBilgiKutulari"/> 
+            <input name="sifre" placeholder="Şifre" type="password" style="width:345px;" class="GirisBilgiKutulari"/> 
     </div>
 
     <div class="flexBox">
@@ -46,11 +56,13 @@
     </div>
 
      <div class="flexBox">
-        <button class="KayitOlButton"> Kayıt Ol </button>
+     
+     <input name="onay" type="submit" value="Kayıt Ol" class="KayitOlButton" />
+      
     </div>
 
     <div class="flexBox">
-        <p class="kucukaciklamalar" style="margin-top:0px;font-size:16px;">  Zaten bir hesabın var mı? <a class="hemenKaydol">Giriş Yap</a> </p>
+        <p class="kucukaciklamalar" style="margin-top:0px;font-size:16px;">  Zaten bir hesabın var mı? <a href="girisYap.php" class="hemenKaydol">Giriş Yap</a> </p>
     </div>
 
     </form>
